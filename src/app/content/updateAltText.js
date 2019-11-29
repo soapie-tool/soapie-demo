@@ -4,22 +4,22 @@ import * as cocoSsd from '@tensorflow-models/coco-ssd';
  *
  * void
  */
- const updateAltText = async () => {
-   const model = await cocoSsd.load();
-   const images = document.getElementsByTagName('img');
+const updateAltText = async () => {
+  const model = await cocoSsd.load();
+  const images = document.getElementsByTagName('img');
 
-   for (var i = 0, l = images.length; i < l; i++) {
-     if (images[i].alt.replace(/\W+/g,"") == ""){
-       const predictions = await getPrediction(images[i], model);
+  for (var i = 0, l = images.length; i < l; i++) {
+    if (images[i].alt.replace(/\W+/g,"") == ""){
+      const predictions = await getPrediction(images[i], model);
 
-       if (predictions){
-         images[i].alt = `Soapie sees ${predictions}.`;
-       }else{
-         images[i].alt = `Soapie sees nothing.`;
-       }
-     }
-   }
- }
+      if (predictions){
+        images[i].alt = `Soapie sees ${predictions}.`;
+      }else{
+        images[i].alt = `Soapie sees nothing.`;
+      }
+    }
+  }
+}
 
 /**
  * param Node image
