@@ -28,7 +28,7 @@ Unpacked Soapie will be compiled into `dist`. Use `npx webpack` to recompile aft
 
 Test the extension by installing the `dist/manifest.json` to your browser (Chrome or Firefox)
 
-> Testing in Firefox: Can use [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/) (Optional)
+> Optional: Testing in Firefox using [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/)
 
 ## Contributing
 
