@@ -1,2 +1,3 @@
-# Mac OS
 .DS_Store
+dist/js/*
+node_modules/

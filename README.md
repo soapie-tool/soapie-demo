@@ -6,7 +6,17 @@ Details can be found on [this page](https://github.com/soapie-tool/project-intro
 
 ## Installation
 
-(TBC)
+In this repository
+```
+npm install
+```
+
+Build
+```
+npx webpack
+```
+
+Unpacked Soapie will be compiled into `dist`. Use `npx webpack` to recompile after editing
 
 ## Developer setup
 
@@ -15,3 +25,9 @@ Details can be found on [this page](https://github.com/soapie-tool/project-intro
 ## Contributing
 
 (TBC)
+
+## What's next
+1. Setup hot reload for development environment
+2. Setup build scripts
+3. pre-commit hooks
+
