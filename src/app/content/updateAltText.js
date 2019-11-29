@@ -9,10 +9,15 @@ const updateAltText = async () => {
   const images = document.getElementsByTagName('img');
 
   for (var i = 0, l = images.length; i < l; i++) {
-    const predictions = await getPrediction(images[i], model);
+    if (images[i].alt.replace(/\W+/g,"") == ""){
+      const predictions = await getPrediction(images[i], model);
 
-    if (predictions)
-      images[i].alt = `${images[i].alt} | Soapie: ${predictions}`;
+      if (predictions){
+        images[i].alt = `Soapie sees ${predictions}.`;
+      }else{
+        images[i].alt = `Soapie sees nothing.`;
+      }
+    }
   }
 }
 
