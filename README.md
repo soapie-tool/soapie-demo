@@ -6,6 +6,14 @@ Details can be found on [this page](https://github.com/soapie-tool/project-intro
 
 ## Installation
 
+Install built application at (TBC)
+
+## Developer setup
+
+Pprerequisite:
+
+- node and npm (https://www.npmjs.com/get-npm)
+
 In this repository
 ```
 npm install
@@ -18,9 +26,9 @@ npx webpack
 
 Unpacked Soapie will be compiled into `dist`. Use `npx webpack` to recompile after editing
 
-## Developer setup
+Test the extension by installing the `dist/manifest.json` to your browser (Chrome or Firefox)
 
-(TBC)
+> Testing in Firefox: Can use [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/) (Optional)
 
 ## Contributing
 
@@ -30,4 +38,3 @@ Unpacked Soapie will be compiled into `dist`. Use `npx webpack` to recompile aft
 1. Setup hot reload for development environment
 2. Setup build scripts
 3. pre-commit hooks
-
