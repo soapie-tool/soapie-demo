@@ -7,7 +7,7 @@
     "build": "webpack",
     "build:chrome": "echo \"Work in progress\"",
     "build:firefox": "echo \"Work in progress\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "keywords": [],
   "author": "",
