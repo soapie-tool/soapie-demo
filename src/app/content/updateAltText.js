@@ -9,6 +9,8 @@ const updateAltText = async () => {
   const images = document.getElementsByTagName('img');
 
   for (var i = 0, l = images.length; i < l; i++) {
+    images[i].crossOrigin = "Anonymous"
+
     if (images[i].alt.replace(/\W+/g,"") == ""){
       const predictions = await getPrediction(images[i], model);
 
@@ -22,7 +24,7 @@ const updateAltText = async () => {
 }
 
 /**
- * param Node image
+ * param Dom image
  * param cocoSsd model
  *
  * return String
