@@ -26,13 +26,14 @@ class ImagePrediction {
           imageUrl: req.url,
           imageAltText: `Soapie sees ${imageAltText}`
         }
+        this.sendMessage(req.tabId, payload)
       }else{
         const payload = {
           imageUrl: req.url,
           imageAltText: `Soapie sees nothing.`
         }
+        this.sendMessage(req.tabId, payload)
       }
-      this.sendMessage(req.tabId, payload)
 
     }, { urls: ["<all_urls>"], types: ["image", "object"] })
   }
