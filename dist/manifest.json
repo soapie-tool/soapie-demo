@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "Browser extention to increase page accessibility",
   "homepage_url": "https://github.com/soapie-tool/soapie-demo",
-  "author": "Cheuk Ting Ho",
+  "author": "Soapie",
   "manifest_version": 2,
   "permissions": [
+    "webRequest",
+    "webRequestBlocking",
     "<all_urls>",
     "tabs"
   ],
