@@ -20,20 +20,11 @@ class ImagePrediction {
       const imageAltText = await this.getPrediction(image)
       this.images[req.url] = imageAltText
 
-      console.log(imageAltText)
-      if (imageAltText) {
-        const payload = {
-          imageUrl: req.url,
-          imageAltText: `Soapie sees ${imageAltText}`
-        }
-        this.sendMessage(req.tabId, payload)
-      }else{
-        const payload = {
-          imageUrl: req.url,
-          imageAltText: `Soapie sees nothing.`
-        }
-        this.sendMessage(req.tabId, payload)
+      const payload = {
+        imageUrl: req.url,
+        imageAltText: `Soapie sees ${imageAltText || 'nothing'}.`
       }
+      this.sendMessage(req.tabId, payload)
 
     }, { urls: ["<all_urls>"], types: ["image", "object"] })
   }
