@@ -28,7 +28,7 @@
   "dependencies": {
     "@tensorflow-models/coco-ssd": "2.0.1",
     "@tensorflow/tfjs-converter": "1.4.0",
-    "@tensorflow/tfjs-core": "1.4.0",
+    "@tensorflow/tfjs-core": "1.5.2",
     "react": "16.12.0",
     "react-dom": "16.12.0"
   }
