@@ -13,7 +13,7 @@
   "author": "",
   "license": "",
   "devDependencies": {
-    "@types/chrome": "0.0.93",
+    "@types/chrome": "0.0.100",
     "@types/react": "16.9.16",
     "@types/react-dom": "16.9.4",
     "css-loader": "3.3.0",
